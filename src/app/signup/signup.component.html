@@ -1,0 +1,8 @@
+<div class="form-container">
+    <h2>Sign Up</h2>
+    <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+    <input type="text" placeholder="Username" [(ngModel)]="username" />
+    <input type="password" placeholder="Password" [(ngModel)]="password" />
+    <button (click)="onSignup()">Sign Up</button>
+    <p>Already have an account? <button (click)="gotoLogin()">Log In</button></p>
+  </div>
